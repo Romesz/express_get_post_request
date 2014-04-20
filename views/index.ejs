@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      <form method="post" action="">
+          <input type="name" placeholder="your name" name="user" value="<%= name %>">
+          <button>submit</button>
+      </form>
+      <% if(name) { %>
+      <p id="desc">
+          Your name is: <span><%= name %></span>
+      </p>
+      <% } %>
+  </body>
+</html>
